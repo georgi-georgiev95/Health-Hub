@@ -9,3 +9,10 @@ export interface User {
     recipeComments: string[];
     workoutComments: string[];
 }
+
+export interface UserData {
+    username: string;
+    email: string;
+    password: string;
+    rePassword?: string;
+}
