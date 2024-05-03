@@ -1,7 +1,6 @@
 //! TEST SERVER REQUESTS
 
 
-
 //* REGISTER USER
 
 // fetch("http://localhost:4000/users/register", {
