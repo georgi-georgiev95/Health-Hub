@@ -52,3 +52,43 @@
 //         console.log(err);
 //     })
 
+//* GET ALL RECIPES
+
+// fetch("http://localhost:4000/recipes/catalog")
+// .then((res) => {
+//     if (!res.ok) {
+//         return res.json().then((err) => {
+//             throw new Error(err.error)
+//         });
+//     }
+//     return res.json()
+// })
+//     .then((data) => console.log(data))
+//     .catch((err) => console.log(err))
+
+//* CREATE RECIPE
+
+// fetch("http://localhost:4000/recipes/add", {
+//     method: "POST",
+//     headers: {
+//         "Content-Type": "application/json",
+//     },
+//     body: JSON.stringify({
+//         name: "test",
+//         difficultyLevel: "Medium",
+//         imageUrl: "http://test.test",
+//         ingredients: "test",
+//         description: "test",
+//         owner: "6635183fb878e316f8121187"
+//     }),
+// })
+//     .then((res) => {
+//         if (!res.ok) {
+//             return res.json().then((err) => {
+//                 throw new Error(err.error)
+//             });
+//         }
+//         return res.json()
+//     })
+//     .then((data) => console.log(data))
+//     .catch((err) => console.log(err))
