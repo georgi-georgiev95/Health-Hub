@@ -4,12 +4,11 @@ enum DifficultyLevel {
     Hard = "Hard",
 }
 
-export interface Recipe {
+export interface Workout {
     _id?: string
     name: string
     difficultyLevel: DifficultyLevel
-    imageUrl: string
-    ingredients: string
+    goal: string
     description: string
     owner: string
     comments: string[]

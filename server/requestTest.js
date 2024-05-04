@@ -1,5 +1,7 @@
 //! TEST SERVER REQUESTS
 
+const { getOriginalNode } = require("typescript");
+
 
 //* REGISTER USER
 
@@ -78,6 +80,47 @@
 //         difficultyLevel: "Medium",
 //         imageUrl: "http://test.test",
 //         ingredients: "test",
+//         description: "test",
+//         owner: "6635183fb878e316f8121187"
+//     }),
+// })
+//     .then((res) => {
+//         if (!res.ok) {
+//             return res.json().then((err) => {
+//                 throw new Error(err.error)
+//             });
+//         }
+//         return res.json()
+//     })
+//     .then((data) => console.log(data))
+//     .catch((err) => console.log(err))
+
+//* GET ALL WORKOUTS
+
+// fetch("http://localhost:4000/workouts/catalog")
+//     .then((res) => {
+//         if (!res.ok) {
+//             return res.json().then((err) => {
+//                 throw new Error(err.error)
+//             });
+//         }
+//         return res.json()
+//     })
+//     .then((data) => console.log(data))
+//     .catch((err) => console.log(err))
+
+
+//* CREATE WORKOUT
+
+// fetch("http://localhost:4000/workouts/add", {
+//     method: "POST",
+//     headers: {
+//         "Content-Type": "application/json",
+//     },
+//     body: JSON.stringify({
+//         name: "test",
+//         difficultyLevel: "Medium",
+//         goal: "test",
 //         description: "test",
 //         owner: "6635183fb878e316f8121187"
 //     }),
