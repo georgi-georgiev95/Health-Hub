@@ -1,8 +1,5 @@
 //! TEST SERVER REQUESTS
 
-const { getOriginalNode } = require("typescript");
-
-
 //* REGISTER USER
 
 // fetch("http://localhost:4000/users/register", {
